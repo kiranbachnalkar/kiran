@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BillingActivity" >
+
+    <FrameLayout
+        android:id="@+id/actionbar_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:layout_alignParentTop="true" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/content_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/actionbar_framelayout" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/product_search_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/actionbar_framelayout"
+        android:background="@color/dark_transparent_color"
+        android:gravity="right"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/product_search_listview"
+            android:layout_width="@dimen/productsearch_listview_width"
+            android:layout_height="match_parent" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

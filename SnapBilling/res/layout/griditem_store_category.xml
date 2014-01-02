@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/category_textview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/store_category_verticalpadding"
+    android:paddingLeft="@dimen/store_category_horizontalpadding"
+    android:paddingRight="@dimen/store_category_horizontalpadding"
+    android:paddingTop="@dimen/store_category_verticalpadding"
+    android:text="" />

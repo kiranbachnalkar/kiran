@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/store_columnwidth"
+    android:layout_height="@dimen/store_rowheight"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/product_imageview"
+        android:layout_width="@dimen/store_productimage_height"
+        android:layout_height="@dimen/store_productimage_width"
+        android:scaleType="fitEnd"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/product_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:maxWidth="@dimen/store_columnwidth"
+        android:singleLine="true"
+        android:text="TextView" />
+
+</LinearLayout>

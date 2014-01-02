@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/back_navigation_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:text="&lt;"
+        android:visibility="gone" />
+
+    <com.jess.ui.TwoWayGridView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/store_shoppingcart_gridview"
+        android:layout_width="@dimen/store_shoppingcart_listview_width"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/back_navigation_button"
+        android:background="@android:color/white"
+        app:cacheColorHint="#E8E8E8"
+        app:columnWidth="@dimen/store_shoppingcart_width"
+        app:gravity="center"
+        app:horizontalSpacing="@dimen/activity_horizontal_margin"
+        app:numColumns="auto_fit"
+        app:numRows="@integer/store_shoppingcart_rows"
+        app:rowHeight="@dimen/store_shoppingcart_height"
+        app:scrollDirectionLandscape="horizontal"
+        app:scrollDirectionPortrait="vertical"
+        app:stretchMode="spacingWidthUniform"
+        app:verticalSpacing="@dimen/activity_vertical_margin" />
+
+    <RelativeLayout
+        android:id="@+id/product_search_relativelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true" >
+
+        <EditText
+            android:id="@+id/product_search_edittext"
+            android:layout_width="@dimen/productsearch_edittext_width"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:inputType="text"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/product_search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:text="search" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bill_navigation_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/product_search_relativelayout"
+        android:text="bill"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/store_navigation_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/product_search_relativelayout"
+        android:text="store"
+        android:visibility="gone" />
+
+</RelativeLayout>

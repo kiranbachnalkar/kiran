@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.jess.ui.TwoWayGridView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/store_shoppingcart_gridview"
+            android:layout_width="@dimen/store_shoppingcart_listview_width"
+            android:layout_height="@dimen/store_shoppingcart_height"
+            android:background="@android:color/white"
+            app:cacheColorHint="#E8E8E8"
+            app:columnWidth="@dimen/store_shoppingcart_width"
+            app:gravity="center"
+            app:horizontalSpacing="@dimen/activity_horizontal_margin"
+            app:numColumns="auto_fit"
+            app:numRows="@integer/store_shoppingcart_rows"
+            app:rowHeight="@dimen/store_shoppingcart_height"
+            app:scrollDirectionLandscape="horizontal"
+            app:scrollDirectionPortrait="vertical"
+            app:stretchMode="spacingWidthUniform"
+            app:verticalSpacing="@dimen/activity_vertical_margin" />
+
+        <com.jess.ui.TwoWayGridView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/store_categories_gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/store_subcategory_height"
+            android:background="@android:color/white"
+            app:cacheColorHint="#E8E8E8"
+            app:columnWidth="@dimen/store_category_width"
+            app:gravity="center"
+            app:horizontalSpacing="@dimen/activity_horizontal_margin"
+            app:numColumns="auto_fit"
+            app:numRows="@integer/store_category_rows"
+            app:rowHeight="@dimen/store_category_height"
+            app:scrollDirectionLandscape="horizontal"
+            app:scrollDirectionPortrait="vertical"
+            app:stretchMode="spacingWidthUniform"
+            app:verticalSpacing="@dimen/activity_vertical_margin" />
+
+        <com.jess.ui.TwoWayGridView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/store_subcategories_gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/store_subcategory_height"
+            android:background="@android:color/white"
+            app:cacheColorHint="#E8E8E8"
+            app:columnWidth="@dimen/store_subcategory_width"
+            app:gravity="center"
+            app:horizontalSpacing="@dimen/activity_horizontal_margin"
+            app:numColumns="auto_fit"
+            app:numRows="@integer/store_subcategory_rows"
+            app:rowHeight="@dimen/store_subcategory_height"
+            app:scrollDirectionLandscape="horizontal"
+            app:scrollDirectionPortrait="vertical"
+            app:stretchMode="spacingWidthUniform"
+            app:verticalSpacing="@dimen/activity_vertical_margin" />
+
+        <com.jess.ui.TwoWayGridView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/store_products_gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/store_height"
+            android:background="@android:color/white"
+            app:cacheColorHint="#E8E8E8"
+            app:columnWidth="@dimen/store_columnwidth"
+            app:gravity="center"
+            app:numColumns="auto_fit"
+            app:numRows="@integer/virtual_store_rows"
+            app:rowHeight="@dimen/store_rowheight"
+            app:scrollDirectionLandscape="horizontal"
+            app:scrollDirectionPortrait="vertical"
+            app:stretchMode="none" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/checkout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/checkout" />
+
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/amount_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/amount" />
+
+        <TextView
+            android:id="@+id/savings_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/amount_textview"
+            android:text="@string/savings" />
+
+        <TextView
+            android:id="@+id/total_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/savings_textview"
+            android:text="@string/total" />
+
+        <TextView
+            android:id="@+id/discount_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/total_textview"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/discount" />
+
+        <TextView
+            android:id="@+id/pay_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/discount_textview"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/pay" />
+
+        <TextView
+            android:id="@+id/cash_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/pay_textview"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/cash" />
+
+        <TextView
+            android:id="@+id/change_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/cash_textview"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/change" />
+
+        <TextView
+            android:id="@+id/amount_value_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/savings_value_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/amount_value_textview" />
+
+        <TextView
+            android:id="@+id/total_value_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/savings_value_textview" />
+
+        <Button
+            android:id="@+id/discount_value_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/total_value_textview"
+            android:text="@string/default_discount" />
+
+        <TextView
+            android:id="@+id/pay_value_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/discount_value_button" />
+
+        <Button
+            android:id="@+id/cash_value_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/pay_value_textview"
+            android:text="@string/default_cash" />
+
+        <TextView
+            android:id="@+id/change_value_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/cash_value_button" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cancel_bill_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/pay_bill_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/paid" />
+
+        <Button
+            android:id="@+id/delivery_bill_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delivery" />
+    </LinearLayout>
+
+</LinearLayout>

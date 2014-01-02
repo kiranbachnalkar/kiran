@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/productsku_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:maxLength="30"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/decrease_qty_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_toRightOf="@+id/productsku_mrp_textview"
+        android:text="@string/minus" />
+
+    <Button
+        android:id="@+id/increase_qty_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="@string/plus" />
+
+    <EditText
+        android:id="@+id/qty_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_toLeftOf="@id/increase_qty_button"
+        android:layout_toRightOf="@id/decrease_qty_button"
+        android:ems="10"
+        android:text="0"
+        android:maxLength="@integer/max_characters_numberinput"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/productsku_mrp_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_toRightOf="@+id/productsku_name_textview"
+        android:text="TextView" />
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TextView
+        android:id="@+id/bill_productslno_textview"
+        android:layout_width="@dimen/checkoutbill_productsnlo_width"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="2" />
+
+    <TextView
+        android:id="@+id/bill_productname_textview"
+        android:layout_width="@dimen/checkoutbill_productname_width"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="2" />
+
+    <TextView
+        android:id="@+id/bill_productquantity_textview"
+        android:layout_width="@dimen/checkoutbill_producqty_width"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="2" />
+
+    <TextView
+        android:id="@+id/bill_productmrp_textview"
+        android:layout_width="@dimen/checkoutbill_productprice_width"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="2" />
+
+    <TextView
+        android:id="@+id/bill_producttotal_textview"
+        android:layout_width="@dimen/checkoutbill_producttotal_width"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="2" />
+
+</LinearLayout>

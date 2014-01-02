@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/bill_customerdetails_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:layout_alignParentTop="true" >
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/bill_header_layout"
+        android:layout_width="@dimen/checkout_bill_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/bill_customerdetails_relativelayout"
+        layout="@layout/header_bill" />
+
+    <include
+        android:id="@+id/bill_footer_layout"
+        android:layout_width="@dimen/checkout_bill_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        layout="@layout/footer_bill" />
+
+    <ListView
+        android:id="@+id/bill_listview"
+        android:layout_width="@dimen/checkout_bill_width"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bill_footer_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/bill_header_layout" >
+    </ListView>
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/bill_customerdetails_relativelayout"
+        android:layout_toRightOf="@id/bill_listview" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/offers_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <com.jess.ui.TwoWayGridView
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/checkout_offers_gridview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/white"
+                        app:cacheColorHint="#E8E8E8"
+                        app:columnWidth="@dimen/store_columnwidth"
+                        app:gravity="center"
+                        app:numColumns="auto_fit"
+                        app:numRows="@integer/virtual_store_rows"
+                        app:rowHeight="@dimen/store_rowheight"
+                        app:scrollDirectionLandscape="horizontal"
+                        app:scrollDirectionPortrait="vertical"
+                        app:stretchMode="none" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/quickadd_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <com.jess.ui.TwoWayGridView
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/checkout_quickadd_gridview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/white"
+                        app:cacheColorHint="#E8E8E8"
+                        app:columnWidth="@dimen/store_columnwidth"
+                        app:gravity="center"
+                        app:numColumns="auto_fit"
+                        app:numRows="@integer/virtual_store_rows"
+                        app:rowHeight="@dimen/store_rowheight"
+                        app:scrollDirectionLandscape="horizontal"
+                        app:scrollDirectionPortrait="vertical"
+                        app:stretchMode="none" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/checkout_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <include
+                        android:id="@+id/complete_bill_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        layout="@layout/layout_complete_bill"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+    <FrameLayout
+        android:id="@+id/overlay_framelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+    </FrameLayout>
+
+    <include
+        android:id="@+id/delete_return_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_deletereturn"
+        android:visibility="gone" />
+
+</RelativeLayout>

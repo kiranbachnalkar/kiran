@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="actionbar_height">50dp</dimen>
+    <dimen name="store_rowheight">200dp</dimen>
+    <dimen name="store_columnwidth">150dp</dimen>
+    <dimen name="store_subcategory_height">50dp</dimen>
+    <dimen name="store_subcategory_width">100dp</dimen>
+    <dimen name="store_category_height">50dp</dimen>
+    <dimen name="store_category_width">100dp</dimen>
+    <dimen name="store_category_verticalpadding">8dp</dimen>
+    <dimen name="store_category_horizontalpadding">8dp</dimen>
+    <dimen name="store_productimage_height">120dp</dimen>
+    <dimen name="store_productimage_width">120dp</dimen>
+    <dimen name="store_height">400dp</dimen>
+    <dimen name="store_shoppingcart_width">100dp</dimen>
+    <dimen name="store_shoppingcart_listview_width">800dp</dimen>
+    <dimen name="editproduct_popover_width">300dp</dimen>
+    
+    
+    <integer name="virtual_store_rows">2</integer>
+    <integer name="store_category_rows">1</integer>
+    <integer name="store_shoppingcart_rows">1</integer>
+    <integer name="store_subcategory_rows">1</integer>
+    <integer name="max_characters_numberinput">6</integer>
+    
+</resources>

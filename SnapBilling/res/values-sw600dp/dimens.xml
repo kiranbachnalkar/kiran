@@ -1,0 +1,56 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
+    -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="actionbar_height">60dp</dimen>
+    <dimen name="store_rowheight">200dp</dimen>
+    <dimen name="store_columnwidth">150dp</dimen>
+    <dimen name="store_subcategory_height">75dp</dimen>
+    <dimen name="store_subcategory_width">100dp</dimen>
+    <dimen name="store_category_height">75dp</dimen>
+    <dimen name="store_category_width">100dp</dimen>
+    <dimen name="store_category_verticalpadding">8dp</dimen>
+    <dimen name="store_category_horizontalpadding">8dp</dimen>
+    <dimen name="store_productimage_height">150dp</dimen>
+    <dimen name="store_productimage_width">160dp</dimen>
+    <dimen name="store_height">500dp</dimen>
+    <dimen name="store_shoppingcart_height">80dp</dimen>
+    <dimen name="store_shoppingcart_width">100dp</dimen>
+    <dimen name="store_shoppingcart_listview_width">400dp</dimen>
+    <dimen name="editproduct_popover_width">300dp</dimen>
+    <dimen name="productsearch_listview_width">300dp</dimen>
+    <dimen name="productsearch_image_width">70dp</dimen>
+    <dimen name="productsearch_image_height">70dp</dimen>
+    <dimen name="productsearch_edittext_width">200dp</dimen>
+    <dimen name="checkout_bill_width">440dp</dimen>
+    <dimen name="checkoutbill_productname_width">190dp</dimen>
+    <dimen name="checkoutbill_productsnlo_width">40dp</dimen>
+    <dimen name="checkoutbill_producqty_width">70dp</dimen>
+    <dimen name="checkoutbill_productprice_width">70dp</dimen>
+    <dimen name="checkoutbill_producttotal_width">70dp</dimen>
+
+    <integer name="virtual_store_rows">2</integer>
+    <integer name="store_category_rows">1</integer>
+    <integer name="store_shoppingcart_rows">1</integer>
+    <integer name="store_subcategory_rows">1</integer>
+    <integer name="discount1">5</integer>
+    <integer name="discount2">10</integer>
+    <integer name="discount3">15</integer>
+    <integer name="button0">0</integer>
+    <integer name="button1">1</integer>
+    <integer name="button2">2</integer>
+    <integer name="button3">3</integer>
+    <integer name="button4">4</integer>
+    <integer name="button5">5</integer>
+    <integer name="button6">6</integer>
+    <integer name="button7">7</integer>
+    <integer name="button8">8</integer>
+    <integer name="button9">9</integer>
+    <integer name="button_dot">88</integer>
+    <integer name="button_enter">89</integer>
+
+</resources>
